@@ -3,9 +3,7 @@ const cors = require('cors')
 const bodyParser = require('body-parser')
 const path = require('path')
 
-if  (process.env.NODE_ENV !== 'production') {
-  require('dotenv').config()
-}
+if (process.env.NODE_ENV !== 'production') require('dotenv').config()
 
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY)
 
@@ -25,11 +23,9 @@ if (process.env.NODE_ENV === 'production') {
   })
 }
 
-app.listen(port, (error) => {
-  if (error) {
-    throw error
-  }
-  console.log('Server is up on port ' + port)
+app.listen(port, error => {
+  if (error) throw error
+  console.log('Server running on port ' + port)
 })
 
 app.post('/payment', (req, res) => {
