@@ -56,6 +56,7 @@ export const BackgroundImage = styled.div`
   background-size: cover;
   background-position: center;
   margin-bottom: 5px;
+  margin-right: 10px;
   background-image: ${({ imageUrl }) => `url(${imageUrl})`};
 `
 
@@ -75,4 +76,5 @@ export const NameContainer = styled.span`
 export const PriceContainer = styled.span`
   width: 20%;
   text-align: right;
+  margin-right: 10px;
 `
