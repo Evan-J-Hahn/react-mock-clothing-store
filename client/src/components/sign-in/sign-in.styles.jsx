@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const SignInContainer = styled.div`
-  width: 380px;
+  width: 370px;
   display: flex;
   flex-direction: column;
 `
