@@ -50,7 +50,7 @@ const SignIn = ({ emailSignInStart, googleSignInStart }) => {
             onClick={googleSignInStart}
             isGoogleSignIn
           >
-            Sign in with Google
+            Google Sign In
           </CustomButton>
         </ButtonsBarContainer>
       </form>
